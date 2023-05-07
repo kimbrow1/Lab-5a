@@ -12,11 +12,6 @@ let shippingCost = 3.99;
 
 
 
-
-
-
-
-
 let dog1 = prompt("How many Hot Dogs?");
 
 let subtotal = price * dog1;
@@ -31,20 +26,28 @@ let total = subtotal + tax;
 alert(total);
 
 
-let discount1 = price / 1 + salesTax;
+let discount1 = price * salesTax / discount;
 
-let discountedPrice1 = subtotal + tax + discountedPrice1;
+let discountedPrice1 = total * salesTax / discount;
 
 alert(discountedPrice1);
+
+
+let discounts2 = price * salesTax / discount2;
+
+let discountedPrice2 = total * salesTax / discount2;
+
+alert(discountedPrice2);
+
 
 
 let shippingCost;
 
 if (total >= 25) {
-    message = "Your shipping will be free"
+   alert( "Your shipping will be free")
     shippingCost = 0;
 }else {
-    message = "The cost of shipping is 3.99"
+    alert("The cost of shipping is 3.99")
 
     shippingCost= 3.99
 }
